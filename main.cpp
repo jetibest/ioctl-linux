@@ -400,7 +400,7 @@ int main(int argc, char addr argv[])
                 std::cerr << "error: Failed to resolve request parameter (" << cmd_arg << ", " << cmd_result.c_str() << ")." << std::endl;
                 return 1;
             }
-            request = std::stol(cmd_result);
+            request = std::stoll(cmd_result);
             
             if(argc == 4 && std::strcmp(argv[3], "-") == 0)
             {
